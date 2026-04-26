@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Susmita Sarker | Gynecological Oncology Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-circle-dot"></i></span>
+        <div class="logo-text">
+          <span class="logo-name">Dr. Susmita Sarker</span>
+          <span class="logo-tag">FCPS · Oncology</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#hospitals" class="nav-link">Hospitals</a></li>
+        <li><a href="#appointment" class="nav-link nav-cta">Book Appointment</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- Animated background blobs -->
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-content reveal-left">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i>
+          <span>15+ Years of Excellence in Women's Healthcare</span>
+        </div>
+        <h1 class="hero-title">
+          Expert Women's<br />
+          <em>Healthcare</em> You<br />
+          Can Trust
+        </h1>
+        <p class="hero-subtitle">
+          Specialist in Gynecological Oncology &amp; Obstetrics, dedicated to providing
+          compassionate, advanced care for women at every stage of life.
+        </p>
+        <div class="hero-tags">
+          <span class="tag"><i class="fas fa-ribbon"></i> Gynecological Oncology</span>
+          <span class="tag"><i class="fas fa-heart-pulse"></i> Gynaecology &amp; Obstetrics</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+          <a href="#about" class="btn btn-ghost">
+            <i class="fas fa-play-circle"></i> Learn More
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">FCPS Degrees</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5K+</span>
+            <span class="stat-label">Patients Treated</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap reveal-right">
+        <div class="image-ring ring-outer"></div>
+        <div class="image-ring ring-inner"></div>
+        <div class="hero-img-container">
+          <!-- Placeholder doctor silhouette using SVG -->
+          <div class="doctor-placeholder">
+            <svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" class="doctor-svg">
+              <defs>
+                <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#f5c6a0" />
+                  <stop offset="100%" style="stop-color:#e8a87c" />
+                </linearGradient>
+                <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ffffff" />
+                  <stop offset="100%" style="stop-color:#f0f4f8" />
+                </linearGradient>
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#e8f5f0" />
+                  <stop offset="100%" style="stop-color:#fce4ec" />
+                </linearGradient>
+              </defs>
+              <!-- Background circle -->
+              <ellipse cx="150" cy="360" rx="140" ry="30" fill="#2E7D61" opacity="0.08" />
+              <!-- Body / white coat -->
+              <path
+                d="M60 230 Q50 320 45 370 L255 370 Q250 320 240 230 Q210 210 195 220 L165 280 L135 280 L105 220 Q90 210 60 230Z"
+                fill="url(#coatGrad)" stroke="#e0e8e4" stroke-width="1" />
+              <!-- Coat lapels -->
+              <path d="M135 280 L150 230 L165 280" fill="#f8d7e3" stroke="#e8c0d0" stroke-width="0.5" />
+              <!-- Stethoscope -->
+              <path d="M170 250 Q200 260 205 290 Q210 320 185 330" fill="none" stroke="#2E7D61" stroke-width="3"
+                stroke-linecap="round" />
+              <circle cx="185" cy="332" r="6" fill="#2E7D61" />
+              <!-- Neck -->
+              <rect x="132" y="188" width="36" height="45" rx="12" fill="url(#skinGrad)" />
+              <!-- Head -->
+              <ellipse cx="150" cy="160" rx="58" ry="68" fill="url(#skinGrad)" />
+              <!-- Hair -->
+              <path d="M92 140 Q88 80 150 70 Q212 80 208 140 Q200 90 150 85 Q100 90 92 140Z" fill="#3d2b1f" />
+              <path d="M92 140 Q85 170 95 185 Q92 155 98 145Z" fill="#3d2b1f" />
+              <path d="M208 140 Q215 170 205 185 Q208 155 202 145Z" fill="#3d2b1f" />
+              <!-- Hair bun / side sweep -->
+              <path d="M150 75 Q175 65 200 80 Q195 70 175 62 Q155 58 150 75Z" fill="#3d2b1f" />
+              <!-- Eyes -->
+              <ellipse cx="128" cy="158" rx="9" ry="10" fill="white" />
+              <ellipse cx="172" cy="158" rx="9" ry="10" fill="white" />
+              <circle cx="130" cy="159" r="6" fill="#3d2b1f" />
+              <circle cx="174" cy="159" r="6" fill="#3d2b1f" />
+              <circle cx="132" cy="157" r="2" fill="white" />
+              <circle cx="176" cy="157" r="2" fill="white" />
+              <!-- Eyebrows -->
+              <path d="M118 146 Q128 141 138 145" stroke="#3d2b1f" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+              <path d="M162 145 Q172 141 182 146" stroke="#3d2b1f" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+              <!-- Nose -->
+              <path d="M147 168 Q144 182 140 186 Q150 189 160 186 Q156 182 153 168" fill="none" stroke="#c8926a"
+                stroke-width="1.5" stroke-linecap="round" />
+              <!-- Mouth / smile -->
+              <path d="M133 198 Q150 210 167 198" stroke="#c06070" stroke-width="2.5" fill="none"
+                stroke-linecap="round" />
+              <!-- Ears -->
+              <ellipse cx="92" cy="165" rx="10" ry="13" fill="url(#skinGrad)" stroke="#d4a070" stroke-width="0.5" />
+              <ellipse cx="208" cy="165" rx="10" ry="13" fill="url(#skinGrad)" stroke="#d4a070" stroke-width="0.5" />
+              <!-- Small earrings -->
+              <circle cx="92" cy="172" r="3" fill="#d4af37" opacity="0.8" />
+              <circle cx="208" cy="172" r="3" fill="#d4af37" opacity="0.8" />
+              <!-- Coat collar details -->
+              <path d="M115 230 Q110 220 105 215" stroke="#d0ddd8" stroke-width="1.5" fill="none" />
+              <path d="M185 230 Q190 220 195 215" stroke="#d0ddd8" stroke-width="1.5" fill="none" />
+              <!-- Name badge -->
+              <rect x="155" y="295" width="60" height="35" rx="4" fill="#2E7D61" opacity="0.9" />
+              <text x="185" y="309" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif"
+                font-weight="bold">Dr. Susmita</text>
+              <text x="185" y="318" text-anchor="middle" font-size="4" fill="#a8e6cf" font-family="sans-serif">Gynec.
+                Oncology</text>
+              <rect x="168" y="323" width="34" height="3" rx="1.5" fill="#a8e6cf" opacity="0.5" />
+            </svg>
+          </div>
+        </div>
+        <!-- Floating credential cards -->
+        <div class="float-card card-top">
+          <i class="fas fa-graduation-cap"></i>
+          <div>
+            <strong>FCPS (Gynae & Obs)</strong>
+            <small>Dual Specialization</small>
+          </div>
+        </div>
+        <div class="float-card card-bottom">
+          <i class="fas fa-hospital"></i>
+          <div>
+            <strong>Green Life Hospital</strong>
+            <small>Dhaka, Bangladesh</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span class="label-dot"></span> About the Doctor
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <h2 class="section-title">
+            A Life Devoted to<br /><em>Women's Health &amp; Hope</em>
+          </h2>
+          <p class="about-desc">
+            Dr. Susmita Sarker is a distinguished consultant in Gynecological Oncology
+            and Gynaecology &amp; Obstetrics with over 15 years of clinical expertise.
+            She holds dual FCPS degrees and has dedicated her career to the diagnosis,
+            treatment, and care of women facing complex gynecological conditions and
+            cancers.
+          </p>
+          <p class="about-desc">
+            Practicing at Green Life Hospital Ltd., Dhaka, and the National Institute
+            of Cancer Research &amp; Hospital (NICRH), she combines cutting-edge medical
+            knowledge with a deeply compassionate approach — ensuring every patient
+            feels heard, supported, and hopeful.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item reveal">
+              <div class="highlight-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>15+ Years Experience</h4>
+                <p>Extensive clinical practice in oncology surgery &amp; obstetric care</p>
+              </div>
+            </div>
+            <div class="highlight-item reveal">
+              <div class="highlight-icon">
+                <i class="fas fa-diploma"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Dual FCPS Degrees</h4>
+                <p>FCPS in Gynaecology &amp; Obstetrics + Gynecological Oncology</p>
+              </div>
+            </div>
+            <div class="highlight-item reveal">
+              <div class="highlight-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Advanced Oncology Care</h4>
+                <p>Specialized in complex cancer surgeries &amp; GTN management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal-right">
+          <div class="about-card glass-card">
+            <div class="about-card-header">
+              <div class="card-avatar">
+                <i class="fas fa-user-doctor"></i>
+              </div>
+              <div>
+                <h3>Dr. Susmita Sarker</h3>
+                <span>MBBS, FCPS (Gynae & Obs), FCPS (Gynec. Oncology)</span>
+              </div>
+            </div>
+            <div class="about-card-body">
+              <div class="info-row">
+                <i class="fas fa-stethoscope"></i>
+                <span>Gynecological Oncology & Obstetrics</span>
+              </div>
+              <div class="info-row">
+                <i class="fas fa-hospital-alt"></i>
+                <span>Green Life Hospital, Dhaka</span>
+              </div>
+              <div class="info-row">
+                <i class="fas fa-building-columns"></i>
+                <span>NICRH – National Cancer Institute</span>
+              </div>
+              <div class="info-row">
+                <i class="fas fa-phone"></i>
+                <span>01577218105</span>
+              </div>
+            </div>
+            <div class="about-card-pills">
+              <span class="pill">Cancer Surgery</span>
+              <span class="pill">Laparoscopy</span>
+              <span class="pill">High-Risk Obstetrics</span>
+              <span class="pill">GTN</span>
+              <span class="pill">Ovarian Cysts</span>
+            </div>
+          </div>
+
+          <div class="about-quote glass-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p>"Every woman deserves expert care, honest answers, and a doctor who truly listens."</p>
+            <span class="quote-author">— Dr. Susmita Sarker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-label reveal" style="text-align:center">
+        <span class="label-dot"></span> Medical Services
+      </div>
+      <h2 class="section-title centered reveal">
+        Specialized Care for<br /><em>Every Woman's Need</em>
+      </h2>
+      <p class="section-subtitle reveal">
+        Comprehensive gynecological and oncological services delivered with precision,
+        compassion, and the highest standards of medical excellence.
+      </p>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-ribbon"></i></div>
+          </div>
+          <h3>Cervical Cancer Treatment</h3>
+          <p>Expert diagnosis, staging, surgical, and adjuvant treatment of cervical cancer using the latest protocols
+            and evidence-based approaches.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-circle-nodes"></i></div>
+          </div>
+          <h3>Ovarian Cancer Care</h3>
+          <p>Comprehensive management of ovarian tumors from early detection to complex cytoreductive surgery and
+            post-operative care.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-dna"></i></div>
+          </div>
+          <h3>Uterine Tumor Treatment</h3>
+          <p>Surgical and medical management of uterine fibroids, endometrial cancer, and other uterine pathologies with
+            patient-centered care.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-flask-vial"></i></div>
+          </div>
+          <h3>Molar Pregnancy &amp; GTN</h3>
+          <p>Specialized evaluation and treatment of gestational trophoblastic neoplasia, including hydatidiform mole
+            and choriocarcinoma.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
+          </div>
+          <h3>General Gynecology Care</h3>
+          <p>Routine and complex gynecological consultations including menstrual disorders, PCOS, endometriosis,
+            infections, and preventive care.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-baby"></i></div>
+          </div>
+          <h3>Obstetric &amp; Antenatal Care</h3>
+          <p>High-risk pregnancy management, antenatal monitoring, and safe delivery planning for expectant mothers
+            requiring specialized attention.</p>
+          <a href="#appointment" class="service-link">Consult Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERTISE / WHY CHOOSE HER ===== -->
+  <section class="expertise" id="expertise">
+    <div class="container">
+      <div class="expertise-grid">
+        <div class="expertise-left reveal-left">
+          <div class="section-label">
+            <span class="label-dot light"></span> Why Choose Dr. Sarker
+          </div>
+          <h2 class="section-title light">
+            Trusted by Thousands,<br /><em>Guided by Compassion</em>
+          </h2>
+          <p class="expertise-desc">
+            Dr. Susmita Sarker brings a rare combination of surgical expertise,
+            academic rigor, and heartfelt compassion to every patient interaction.
+            Her mission is not just to treat illness — but to restore hope.
+          </p>
+          <a href="#appointment" class="btn btn-white">
+            <i class="fas fa-calendar-check"></i> Schedule a Consultation
+          </a>
+        </div>
+
+        <div class="expertise-right reveal-right">
+          <div class="expertise-item">
+            <div class="exp-icon"><i class="fas fa-scalpel"></i></div>
+            <div class="exp-content">
+              <h4>Experienced Surgeon</h4>
+              <p>Over 15 years performing complex gynecological oncology surgeries with precision and safety.</p>
+            </div>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i class="fas fa-atom"></i></div>
+            <div class="exp-content">
+              <h4>Advanced Cancer Care</h4>
+              <p>Up-to-date with the latest oncology protocols, ensuring patients receive world-class cancer treatment.
+              </p>
+            </div>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i class="fas fa-hands-holding-heart"></i></div>
+            <div class="exp-content">
+              <h4>Compassionate Treatment</h4>
+              <p>Every patient is treated with dignity, empathy, and individualized attention from diagnosis to
+                recovery.</p>
+            </div>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i class="fas fa-star"></i></div>
+            <div class="exp-content">
+              <h4>Trusted by Patients</h4>
+              <p>Thousands of women trust Dr. Sarker for her honesty, expertise, and unwavering commitment to care.</p>
+            </div>
+          </div>
+          <div class="expertise-item">
+            <div class="exp-icon"><i class="fas fa-shield-halved"></i></div>
+            <div class="exp-content">
+              <h4>Dual FCPS Credential</h4>
+              <p>Dual board certification in Gynaecology & Obstetrics and Gynecological Oncology — a mark of excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOSPITALS & LOCATION ===== -->
+  <section class="hospitals" id="hospitals">
+    <div class="container">
+      <div class="section-label reveal" style="text-align:center">
+        <span class="label-dot"></span> Where to Find Her
+      </div>
+      <h2 class="section-title centered reveal">
+        Practice Locations
+      </h2>
+
+      <div class="hospitals-grid">
+
+        <div class="hospital-card reveal">
+          <div class="hospital-icon">
+            <i class="fas fa-hospital"></i>
+          </div>
+          <div class="hospital-badge primary-badge">Primary Practice</div>
+          <h3>Green Life Hospital Ltd.</h3>
+          <p class="hospital-location">
+            <i class="fas fa-location-dot"></i> 32 Green Road, Panthapath, Dhaka 1205
+          </p>
+          <div class="hospital-details">
+            <div class="h-detail"><i class="fas fa-phone"></i><span>01577218105</span></div>
+            <div class="h-detail"><i class="fas fa-clock"></i><span>Sat–Thu: 9 AM – 5 PM</span></div>
+            <div class="h-detail"><i class="fas fa-calendar-days"></i><span>By Appointment</span></div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="hospital-btn">
+            <i class="fas fa-map-marker-alt"></i> Get Directions
+          </a>
+        </div>
+
+        <div class="hospital-card reveal">
+          <div class="hospital-icon secondary-icon">
+            <i class="fas fa-building-columns"></i>
+          </div>
+          <div class="hospital-badge secondary-badge">Also Practices</div>
+          <h3>NICRH – National Institute of Cancer Research &amp; Hospital</h3>
+          <p class="hospital-location">
+            <i class="fas fa-location-dot"></i> Mohakhali, Dhaka, Bangladesh
+          </p>
+          <div class="hospital-details">
+            <div class="h-detail"><i class="fas fa-microscope"></i><span>Oncology Department</span></div>
+            <div class="h-detail"><i class="fas fa-clock"></i><span>Selected Days</span></div>
+            <div class="h-detail"><i class="fas fa-award"></i><span>National Cancer Institute</span></div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="hospital-btn secondary-btn">
+            <i class="fas fa-map-marker-alt"></i> Get Directions
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container reveal">
+        <div class="map-label">
+          <i class="fas fa-map-pin"></i> Green Life Hospital – Dhaka
+        </div>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7!2d90.3878!3d23.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b0c27c7b8f%3A0xa27b2e7f4b5a8d90!2sGreen%20Life%20Hospital%20Ltd.!5e0!3m2!1sen!2sbd!4v1710000000000!5m2!1sen!2sbd"
+            width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Green Life Hospital Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENT CTA ===== -->
+  <section class="appointment" id="appointment">
+    <div class="appt-bg-blobs">
+      <div class="appt-blob appt-blob-1"></div>
+      <div class="appt-blob appt-blob-2"></div>
+    </div>
+    <div class="container">
+      <div class="appt-content reveal">
+        <div class="appt-icon"><i class="fas fa-calendar-heart"></i></div>
+        <h2>Ready to Take the First Step?</h2>
+        <p>
+          Don't wait — early diagnosis saves lives. Book a consultation with
+          Dr. Susmita Sarker today and receive expert, compassionate care.
+        </p>
+        <div class="appt-phone">
+          <i class="fas fa-phone-volume"></i>
+          <span>01577218105</span>
+        </div>
+        <div class="appt-actions">
+          <a href="tel:01577218105" class="btn btn-appt-primary">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+          <a href="https://wa.me/8801577218105" target="_blank" class="btn btn-appt-secondary">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <p class="appt-note">
+          <i class="fas fa-circle-info"></i>
+          Available at Green Life Hospital, Dhaka &amp; NICRH
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fas fa-circle-dot"></i>
+            <span>Dr. Susmita Sarker</span>
+          </div>
+          <p>FCPS (Gynae &amp; Obs) · FCPS (Gynec. Oncology)</p>
+          <p class="footer-tagline">Caring for Women. Healing Lives.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#expertise">Why Choose Her</a></li>
+            <li><a href="#hospitals">Locations</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Specializations</h4>
+          <ul>
+            <li><a href="#services">Cervical Cancer</a></li>
+            <li><a href="#services">Ovarian Cancer</a></li>
+            <li><a href="#services">Uterine Tumors</a></li>
+            <li><a href="#services">GTN / Molar Pregnancy</a></li>
+            <li><a href="#services">General Gynecology</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <div class="f-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>01577218105</span>
+          </div>
+          <div class="f-contact-item">
+            <i class="fas fa-hospital"></i>
+            <span>Green Life Hospital, Dhaka</span>
+          </div>
+          <div class="f-contact-item">
+            <i class="fas fa-building-columns"></i>
+            <span>NICRH, Mohakhali, Dhaka</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dr. Susmita Sarker. All rights reserved.</p>
+        <p class="footer-credits">
+          <i class="fas fa-heart"></i> Designed with care for women's health
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
